@@ -1,0 +1,18 @@
+{
+    "name": "whatdafox/laravel-keycdn",
+    "description": "KeyCDN API Wrapper for Laravel",
+    "type": "library",
+    "require": {
+        "whatdafox/keycdn": "^1.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.4"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Valentin Prugnaud",
+            "email": "valentin@whatdafox.com"
+        }
+    ]
+}
