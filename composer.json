@@ -3,15 +3,23 @@
     "description": "KeyCDN API Wrapper for Laravel",
     "type": "library",
     "require": {
-        "whatdafox/keycdn": "^1.0"
+        "whatdafox/keycdn": "^1.0",
+        "illuminate/support": "^5.4"
     },
     "require-dev": {
-        "orchestra/testbench": "^3.4"
+        "orchestra/testbench": "^3.4",
+        "phpunit/phpunit": "^6.0",
+        "symfony/var-dumper": "^3.2"
     },
     "license": "MIT",
     "autoload": {
         "psr-4": {
             "KeyCDN\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "KeyCDN\\Tests\\": "tests/"
         }
     },
     "authors": [

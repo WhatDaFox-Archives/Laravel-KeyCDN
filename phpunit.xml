@@ -19,6 +19,6 @@
         </whitelist>
     </filter>
     <php>
-        <env name="KEYCDN_TOKEN" value=""/>
+        <env name="KEYCDN_KEY" value="KEYCDN_KEY"/>
     </php>
 </phpunit>
