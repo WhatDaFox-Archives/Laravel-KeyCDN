@@ -19,7 +19,7 @@ class KeyCDNServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/config/keycdn.php' => config_path('keycdn.php'),
+            __DIR__.'/../config/keycdn.php' => config_path('keycdn.php'),
         ], 'keycdn');
     }
 
@@ -29,17 +29,20 @@ class KeyCDNServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__.'/config/keycdn.php', 'keycdn'
+            __DIR__.'/../config/keycdn.php', 'keycdn'
         );
 
         $this->app->bind(KeyCDN::class, function() {
             return KeyCDN::create(config('keycdn.key'));
         });
-
-        $this->app->booting(function() {
-            $loader = AliasLoader::getInstance();
-            $loader->alias('KeyCDN', KeyCDNFacade::class);
-        });
     }
 
+    /**
+     * Get the services provided by the provider.
+     * @return array
+     */
+    public function provides()
+    {
+        return array('keycdn');
+    }
 }

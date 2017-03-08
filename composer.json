@@ -14,7 +14,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "KeyCDN\\": "src/"
+            "KeyCDN\\": "src/KeyCDN"
         }
     },
     "autoload-dev": {
