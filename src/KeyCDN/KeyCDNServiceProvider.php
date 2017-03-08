@@ -2,10 +2,9 @@
 
 namespace KeyCDN;
 
-use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
 use KeyCDN\Facades\KeyCDN;
-use KeyCDN\Facades\KeyCDN as KeyCDNFacade;
+use KeyCDN\Facades\KeyCDNFacade;
 
 /**
  * Class KeyCDNServiceProvider
