@@ -19,7 +19,7 @@ class KeyCDNServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__.'/config/keycdn.php' => config_path('keycdn.php'),
-        ]);
+        ], 'keycdn');
     }
 
     /**
